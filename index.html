@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Monty Hall Simulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <h1>Monty Hall Problem Simulator 🎯</h1>
+
+    <div class="doors">
+        <button class="door" id="door1" onclick="chooseDoor(1)">🚪 Door 1</button>
+        <button class="door" id="door2" onclick="chooseDoor(2)">🚪 Door 2</button>
+        <button class="door" id="door3" onclick="chooseDoor(3)">🚪 Door 3</button>
+    </div>
+
+    <div class="actions" id="action-buttons" style="display: none;">
+        <button onclick="stay()">Stay</button>
+        <button onclick="switchDoor()">Switch</button>
+    </div>
+
+    <h2 id="result"></h2>
+
+    <!-- <div class="stats">
+        <p>Wins by Staying: <span id="stayWins">0</span></p>
+        <p>Losses by Staying: <span id="stayLosses">0</span></p>
+        <p>Wins by Switching: <span id="switchWins">0</span></p>
+        <p>Losses by Switching: <span id="switchLosses">0</span></p>
+    </div> -->
+    <div class="stats">
+        <table>
+            <tr>
+                <th>Strategy</th>
+                <th>Wins</th>
+                <th>Losses</th>
+            </tr>
+            <tr>
+                <td>Stay</td>
+                <td><span id="stayWins">0</span></td>
+                <td><span id="stayLosses">0</span></td>
+            </tr>
+            <tr>
+                <td>Switch</td>
+                <td><span id="switchWins">0</span></td>
+                <td><span id="switchLosses">0</span></td>
+            </tr>
+        </table>
+    </div>
+    
+
+    <button onclick="resetGame()" class="reset">Reset Game 🔄</button>
+    <button onclick="autoSimulate(1000)" class="auto">Auto Simulate 1000 Games 🤖</button>
+    <button id="next-game-btn" style="display:none; margin-top: 10px;">Next Game ⏭️</button>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

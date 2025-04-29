@@ -1,0 +1,249 @@
+/* body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: #f0f8ff;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.doors {
+    margin: 20px;
+}
+
+.door {
+    font-size: 18px;
+    margin: 10px;
+    padding: 20px 30px;
+    background: #eee;
+    border: 2px solid #555;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.door:hover {
+    background: #d0e6ff;
+}
+
+.actions button {
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #90ee90;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.actions button:hover {
+    background: #76c776;
+}
+
+.stats {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.reset {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 15px;
+    background: #ffcccb;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.reset:hover {
+    background: #ffa7a5;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #222;
+}
+
+.auto {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 15px;
+    background: #add8e6;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.auto:hover {
+    background: #87ceeb;
+}
+
+#next-game-btn {
+    display: none; 
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#next-game-btn:hover {
+    background-color: #45a049; 
+    transform: scale(1.05);
+}
+
+#next-game-btn:active {
+    background-color: #3e8e41; 
+    transform: scale(0.98); 
+} */
+
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #e0f7fa, #f0f8ff);
+    min-height: 100vh;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.doors {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.door {
+    font-size: 20px;
+    margin: 10px;
+    padding: 20px 40px;
+    background: #ffffff;
+    border: 2px solid #0077b6;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.door:hover {
+    background: #caf0f8;
+    transform: scale(1.05);
+}
+
+.actions {
+    margin-top: 30px;
+}
+
+.actions button {
+    font-size: 18px;
+    margin: 10px;
+    padding: 12px 25px;
+    cursor: pointer;
+    background: #48cae4;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.actions button:hover {
+    background: #00b4d8;
+    transform: scale(1.05);
+}
+
+.stats {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #333;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reset {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.reset:hover {
+    background: #ff4d4d;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+.auto {
+    margin-top: 20px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.auto:hover {
+    background: #0096c7;
+    transform: scale(1.05);
+}
+
+#next-game-btn {
+    display: none; /* Initially hidden */
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #90be6d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#next-game-btn:hover {
+    background-color: #70a35a;
+    transform: scale(1.07);
+}
+
+#next-game-btn:active {
+    background-color: #588c46;
+    transform: scale(0.95);
+}
